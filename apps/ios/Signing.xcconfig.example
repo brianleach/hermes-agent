@@ -1,0 +1,10 @@
+// Copy to Signing.xcconfig and fill in for device builds.
+// Simulator builds don't require a team.
+// Wire it up by adding the following to project.yml under targets.Hermes:
+//   configFiles:
+//     Debug: Signing.xcconfig
+//     Release: Signing.xcconfig
+
+DEVELOPMENT_TEAM =
+CODE_SIGN_STYLE = Automatic
+PRODUCT_BUNDLE_IDENTIFIER = com.brianleach.hermes
